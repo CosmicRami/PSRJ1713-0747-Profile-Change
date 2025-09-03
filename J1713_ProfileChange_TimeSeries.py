@@ -135,7 +135,7 @@ with open(scaling_factors_file, 'a') as f:
             date_mjd = date.mjd
             mjds.append(date_mjd)
 
-            residuals_path = "YOUR PATH"
+            residuals_path = YOUR_PATH
 
             with open(residuals_path + prefix + "_I_profile_residuals2.txt", "w") as file:
                 file.write("\n".join(map(str, opt_residuals_I)))
@@ -264,3 +264,4 @@ plt.show()
         
 
         
+
