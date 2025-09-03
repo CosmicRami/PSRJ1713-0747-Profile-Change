@@ -9,14 +9,16 @@ from PhaseGrad import get_offpulse_profile_rms, fft_profile_1d, fft_profile_2d, 
 from scipy.optimize import curve_fit, minimize
 import matplotlib.ticker as ticker
 
+YOUR_PATH = "YOUR PATH"
+
 ### Load Data ###
-residuals_path = 'YOUR PATH'
+residuals_path = YOUR_PATH
 files = sorted(os.listdir(residuals_path))
 #print('List of files in directory have been captured')
 
 mjds = []
 
-scaling_factors_file = 'YOUR PATH / YOUR FILENAME TO SAVE SCALING FACTORS INTO'
+scaling_factors_file = 'YOUR_PATH / YOUR FILENAME TO SAVE SCALING FACTORS INTO'
 
 with open(scaling_factors_file, 'a') as f:
     
@@ -260,4 +262,5 @@ for ax in axs:
 
 plt.show()
         
+
         
